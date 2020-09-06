@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ListView
+        android:id="@+id/listview"
+        android:minHeight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/select"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_up"
+        android:layout_margin="9dp"
+        android:layout_alignParentRight="true" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/down"
+        android:src="@drawable/ic_play"
+        android:layout_margin="9dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/edit"
+        android:src="@drawable/ic_down"
+        android:layout_margin="9dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_check"
+        android:layout_margin="9dp" />
+    <TextView
+        android:id="@+id/sttResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" "
+        android:gravity="bottom"/>
+
+</RelativeLayout>
